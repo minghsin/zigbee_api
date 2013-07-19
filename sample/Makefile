@@ -1,7 +1,7 @@
 OBJS=test.o
 EXEC=test
 
-CFLAGS=
+CFLAGS=-I../include
 LDFLAGS=
 all: $(OBJS)
 	$(CC) -o $(EXEC) $(OBJS) $(CFLAGS) $(LDFLAGS)

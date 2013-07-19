@@ -1,0 +1,11 @@
+#ifndef __ZIGBEE_HA_H
+#define __ZIGBEE_HA_H
+
+#define ZIGBEE_HA_TYPE 0x1000
+
+enum{
+    HA_ONOFF_SWITCH=ZIGBEE_HA_TYPE,
+    HA_DIMABLE_SWITCH=ZIGBEE_HA_TYPE+1
+};
+
+#endif

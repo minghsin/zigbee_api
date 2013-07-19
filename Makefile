@@ -1,6 +1,6 @@
 
 NAME=zb
-OBJS=netvox.o
+OBJS=zigbee_api.o
 LIB=libzb.a
 LIBPATH=lib
 
@@ -21,6 +21,5 @@ test:
 	$(MAKE) -C $(TESTDIR)
 
 clean:
-	find . -name *.o | xargs rm -rf
-	rm $(LIBPATH)/*.a -rf
+	rm $(LIBPATH)/*.a *.o -rf
 	$(MAKE) -C $(TESTDIR) clean
